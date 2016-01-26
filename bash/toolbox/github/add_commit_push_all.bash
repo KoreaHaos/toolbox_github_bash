@@ -1,8 +1,21 @@
-# Introduce the script
+# Always introduce the script!
 
 printf "\nScript add_commit_push_all.bash has been called!\n\n";
 
-# First, turn on git's credential helper cache function.
+# That done; first, handle any args passed in.
+
+if [ -z "$1" ]; then
+_commit_message="Script commit by : $0 - NO MESSAGE!";
+else
+_commit_message="$1 = message. Script commit by : $0.";
+fi
+
+# Display commit message.
+
+printf "\n_commit_message = \'%s\' \n\n" "$_commit_message";
+
+
+# Next, turn on git's credential helper cache function.
 # This makes it so constant user/password entry is not needed.
 # By default, Git will cache your password for 15 minutes.
 # More info : https://help.github.com/articles/caching-your-github-password-in-git/
@@ -15,7 +28,7 @@ git add --all;
 
 # commit,
 
-git commit -m 'Script commit!';
+git commit -m "$_commit_message";
 
 # push,
 
