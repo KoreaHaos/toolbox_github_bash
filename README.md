@@ -1,2 +1,5 @@
 # toolbox_github_bash
-Tool 
+
+Tool for Cloud9/GitHub efficiency.
+
+IN PROGRESS!
