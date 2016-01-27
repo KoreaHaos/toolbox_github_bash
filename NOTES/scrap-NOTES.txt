@@ -1,0 +1,6 @@
+browser dump for GitHub tool:
+https://help.github.com/articles/caching-your-github-password-in-git/
+http://superuser.com/questions/199507/how-do-i-ensure-git-doesnt-ask-me-for-my-github-username-and-password
+https://git-scm.com/docs/git-credential-cache/1.7.12.1
+http://wiki.bash-hackers.org/commands/builtin/printf
+http://stackoverflow.com/questions/9733757/git-maximum-commit-message-size
