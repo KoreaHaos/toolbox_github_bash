@@ -5,7 +5,8 @@ printf "\nScript add_commit_push_all.bash has been called!\n\n";
 # That done; first, handle any args' passed in.
 
 if [ -z "$1" ]; then
-_commit_message="Script commit by : $0 - NO MESSAGE!";
+#_commit_message="Script commit by : $0 - NO MESSAGE!";
+_commit_message="Script commit : - NO MESSAGE! Commited by : $0";
 else
 _commit_message="$1 = message. Script commit by : $0.";
 fi
